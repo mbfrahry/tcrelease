@@ -46,6 +46,7 @@ func TcBuild(server, buildTypeId, provider, targetVersion, nextVersion, user, pa
 		<property name="env.DEPLOYMENT_TARGET_VERSION" value="%s"/>
 		<property name="env.DEPLOYMENT_NEXT_VERSION" value="%s"/>
 		<property name="env.PROVIDER_NAME" value="%s"/>
+		<property name="env.DEPLOYMENT_TYPE" value="provider"/>
 	</properties>
 </build>
 `, buildTypeId, targetVersion, nextVersion, provider)
